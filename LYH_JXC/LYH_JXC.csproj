@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B9CF19B8-2F95-4D9B-B613-6C49E27E66EC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LYH_JXC</RootNamespace>
+    <AssemblyName>LYH_JXC</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisSkin2">
+      <HintPath>C:\Users\xinji400\Desktop\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModifyPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModifyPwd.Designer.cs">
+      <DependentUpon>FrmModifyPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSkinLook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSkinLook.Designer.cs">
+      <DependentUpon>FrmSkinLook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsIn\FrmGoodsInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsIn\FrmGoodsInfo.Designer.cs">
+      <DependentUpon>FrmGoodsInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsIn\FrmGoodsInManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsIn\FrmGoodsInManage.Designer.cs">
+      <DependentUpon>FrmGoodsInManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserObject\FrmGoodsInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserObject\FrmGoodsInsert.Designer.cs">
+      <DependentUpon>FrmGoodsInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsIn\FrmGoodsQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsIn\FrmGoodsQuery.Designer.cs">
+      <DependentUpon>FrmGoodsQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsIn\FrmSupplierManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsIn\FrmSupplierManage.Designer.cs">
+      <DependentUpon>FrmSupplierManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsOut\FrmGoodsSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsOut\FrmGoodsSales.Designer.cs">
+      <DependentUpon>FrmGoodsSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsOut\FrmReturngoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsOut\FrmReturngoods.Designer.cs">
+      <DependentUpon>FrmReturngoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsOut\FrmSalesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsOut\FrmSalesList.Designer.cs">
+      <DependentUpon>FrmSalesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockManage\FrmStockQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockManage\FrmStockQuery.Designer.cs">
+      <DependentUpon>FrmStockQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockManage\FrmStockWarn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockManage\FrmStockWarn.Designer.cs">
+      <DependentUpon>FrmStockWarn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockManage\FrmWarnGoodsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockManage\FrmWarnGoodsList.Designer.cs">
+      <DependentUpon>FrmWarnGoodsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\FrmDataBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManage\FrmDataBack.Designer.cs">
+      <DependentUpon>FrmDataBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\FrmDataReduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManage\FrmDataReduction.Designer.cs">
+      <DependentUpon>FrmDataReduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserObject\FrmAllGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserObject\FrmAllGoods.Designer.cs">
+      <DependentUpon>FrmAllGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserObject\FrmCompanyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserObject\FrmCompanyInfo.Designer.cs">
+      <DependentUpon>FrmCompanyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserObject\FrmunitAndBrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserObject\FrmunitAndBrand.Designer.cs">
+      <DependentUpon>FrmunitAndBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserObject\FrmUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserObject\FrmUserInfo.Designer.cs">
+      <DependentUpon>FrmUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModifyPwd.resx">
+      <DependentUpon>FrmModifyPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSkinLook.resx">
+      <DependentUpon>FrmSkinLook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsIn\FrmGoodsInfo.resx">
+      <DependentUpon>FrmGoodsInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsIn\FrmGoodsInManage.resx">
+      <DependentUpon>FrmGoodsInManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserObject\FrmGoodsInsert.resx">
+      <DependentUpon>FrmGoodsInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsIn\FrmGoodsQuery.resx">
+      <DependentUpon>FrmGoodsQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsIn\FrmSupplierManage.resx">
+      <DependentUpon>FrmSupplierManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsOut\FrmGoodsSales.resx">
+      <DependentUpon>FrmGoodsSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsOut\FrmReturngoods.resx">
+      <DependentUpon>FrmReturngoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsOut\FrmSalesList.resx">
+      <DependentUpon>FrmSalesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManage\FrmStockQuery.resx">
+      <DependentUpon>FrmStockQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManage\FrmStockWarn.resx">
+      <DependentUpon>FrmStockWarn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManage\FrmWarnGoodsList.resx">
+      <DependentUpon>FrmWarnGoodsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\FrmDataBack.resx">
+      <DependentUpon>FrmDataBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\FrmDataReduction.resx">
+      <DependentUpon>FrmDataReduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserObject\FrmAllGoods.resx">
+      <DependentUpon>FrmAllGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserObject\FrmCompanyInfo.resx">
+      <DependentUpon>FrmCompanyInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserObject\FrmunitAndBrand.resx">
+      <DependentUpon>FrmunitAndBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserObject\FrmUserInfo.resx">
+      <DependentUpon>FrmUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LYH_JXC.Common\LYH_JXC.Common.csproj">
+      <Project>{88b387c9-3f0d-4ef2-9781-ec5fabbd7707}</Project>
+      <Name>LYH_JXC.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LYH_JXC.DAL\LYH_JXC.DAL.csproj">
+      <Project>{5ec5d519-fd1b-4f0c-9cca-ba81c9377539}</Project>
+      <Name>LYH_JXC.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LYH_JXC.Entity\LYH_JXC.Entity.csproj">
+      <Project>{e1dd1325-5dfd-4d50-9e82-96a5a1d62e11}</Project>
+      <Name>LYH_JXC.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\修改.ico" />
+    <None Include="Resources\退出.ico" />
+    <None Include="Resources\添加.ico" />
+    <None Include="Resources\删除1.ico" />
+    <None Include="Resources\删除.ico" />
+    <None Include="Resources\确定按钮.png" />
+    <None Include="Resources\取消按钮.png" />
+    <None Include="Resources\取消.ico" />
+    <None Include="Resources\背景.bmp" />
+    <None Include="Resources\保存1.ico" />
+    <None Include="Resources\保存.ico" />
+    <None Include="Resources\bg.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GoodsManage\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
